@@ -22,18 +22,24 @@ const StatusFooter = () => {
 
 // Styling to stick it to the bottom
 const footerStyle = {
-  padding: '10px 30px',
+  position: 'fixed',
+  bottom: 0,
+  
+  // 1. Position it exactly at the end of the sidebar
+  left: '280px', 
+  
+  // 2. Make it span to the right edge
+  right: 0,
+  
+  // 3. Visual Styling
+  height: '50px',
   backgroundColor: '#ecf0f1',
   borderTop: '1px solid #bdc3c7',
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
-  fontSize: '0.85rem',
-  color: '#7f8c8d',
-  position: 'fixed',
-  bottom: 0,
-  left: '200px', // Matches your Sidebar width
-  right: 0
+  padding: '0 40px', // Matches the padding of your Main Content for symmetry
+  zIndex: 1000,
 };
 
 const statusGroup = {
