@@ -19,14 +19,18 @@ const Sidebar = () => {
 };
 
 // Inline styles for quick setup (you can move these to CSS later)
+// src/components/layout/Sidebar.jsx
+
 const sidebarStyle = {
-  width: '200px',
+  width: '240px',      // Slightly wider for a cleaner look
   height: '100vh',
+  position: 'fixed',   // This locks it in place
+  top: 0,
+  left: 0,
   backgroundColor: '#2c3e50',
   color: 'white',
   padding: '20px',
-  display: 'flex',
-  flexDirection: 'column',
+  zIndex: 100,         // Ensures it stays on top of other elements
 };
 
 const listItemStyle = {

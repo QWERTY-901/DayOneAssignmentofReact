@@ -27,11 +27,14 @@ const MainContent = () => {
 };
 
 // Styling to make it look like a real dashboard
+// src/components/layout/MainContent.jsx
+
 const mainStyle = {
-  flex: 1, // Takes up the remaining space next to the Sidebar
+  marginLeft: '240px', // Matches Sidebar width exactly
   padding: '40px',
   backgroundColor: '#f4f7f6',
-  minHeight: '100vh'
+  minHeight: '100vh',
+  width: 'calc(100% - 240px)', // Ensures it doesn't cause horizontal scrolling
 };
 
 const headerStyle = {
